@@ -30,7 +30,7 @@ export default function Todo({ todo }) {
         checked={todo.isDone}
       />
       <span>{todo.name}</span>
-      <button onClick={() => deleteTodo(todo.id, router.refresh)}>
+      <button style={{marginLeft:'10px', marginTop:'8px'}} onClick={() => deleteTodo(todo.id, router.refresh)}>
         Delete
       </button>
     </>

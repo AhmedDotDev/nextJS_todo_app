@@ -10,7 +10,8 @@ export default async function TodoList() {
 
   return (
     <div>
-      <ul style={{ listStyleType: "none", padding: 0 }}>
+      <h2>Manage / Delete Your ToDo(s):</h2>
+      <ul style={{ listStyleType: "none" }}>
         {todos.map((t) => {
           return (
             <li key={t.id} style={{ padding: "5px 0" }}>

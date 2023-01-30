@@ -16,12 +16,14 @@ export default function AddNewTodo() {
   let [name, setName] = useState("");
   return (
     <div>
-      <input
+      <h2>Add Your New ToDo(s):</h2>
+
+      <input style={{paddingRight:'60px',marginLeft:'40px'}}
         type="text"
         onChange={(e) => setName(e.target.value)}
         value={name}
       />
-      <button
+      <button style={{marginLeft:'12px', width:'50px'}}
         onClick={async () => {
           await addTodo(name, router.refresh);
           setName("");
